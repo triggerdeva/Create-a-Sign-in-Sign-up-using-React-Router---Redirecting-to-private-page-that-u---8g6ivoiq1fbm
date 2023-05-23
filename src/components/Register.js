@@ -9,10 +9,9 @@ function Register({ emailChange, passwordChange, setNavigate }) {
     e.preventDefault();
     emailChange(newEmail)
     passwordChange(newPassword)
-    if(newEmail&&newPassword){
+    if(newEmail && newPassword){
       setNavigate(true)
     }
-    
   }
 
   const [newEmail, setNewEmail] = useState('');
